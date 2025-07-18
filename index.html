@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulador de CDI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Simulador de Negociación de CDI</h1>
+  <form id="cdiForm">
+    <label>¿Qué país representas?</label>
+    <select name="pais">
+      <option value="A">País A</option>
+      <option value="B">País B</option>
+      <option value="C">País C</option>
+      <option value="D">País D</option>
+    </select>
+
+    <label>¿Qué método prefieres para evitar la doble imposición?</label>
+    <select name="metodo">
+      <option value="credito">Crédito fiscal</option>
+      <option value="exencion">Exención</option>
+      <option value="mixto">Mixto</option>
+    </select>
+
+    <label>¿Qué tasa de retención propones para dividendos?</label>
+    <select name="tasa">
+      <option value="5">5%</option>
+      <option value="10">10%</option>
+      <option value="15">15%</option>
+    </select>
+
+    <label>¿Incluirías cláusula antiabuso?</label>
+    <select name="antiabuso">
+      <option value="lob">Sí, LOB</option>
+      <option value="ppt">Sí, PPT</option>
+      <option value="no">No</option>
+    </select>
+
+    <label>¿Qué tipo de intercambio de información prefieres?</label>
+    <select name="intercambio">
+      <option value="automatico">Automático</option>
+      <option value="solicitud">A solicitud</option>
+      <option value="ninguno">Ninguno</option>
+    </select>
+
+    <label>¿Qué mecanismo de resolución de controversias eliges?</label>
+    <select name="controversia">
+      <option value="bilateral">Negociación bilateral</option>
+      <option value="arbitraje">Arbitraje obligatorio</option>
+      <option value="ninguno">Ninguno</option>
+    </select>
+
+    <button type="submit">Ver resultado</button>
+  </form>
+
+  <div id="resultado"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
